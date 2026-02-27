@@ -1,0 +1,129 @@
+/* 전체 배경 */
+.confirmation-wrapper {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* 카드 */
+.confirmation-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 48px 40px;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+/* 체크 이미지 */
+.check-image {
+  width: 96px;
+  margin-bottom: 20px;
+}
+
+/* 제목 */
+.confirmation-title {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  letter-spacing: -0.3px;
+}
+
+/* 주문번호 */
+.confirmation-desc {
+  font-size: 15px;
+  color: #495057;
+  margin-bottom: 6px;
+}
+
+/* 안내 문구 */
+.confirmation-sub {
+  font-size: 14px;
+  color: #868e96;
+  margin-bottom: 32px;
+}
+
+/* 버튼 영역 */
+.confirmation-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* 버튼 공통 */
+.confirm-btn {
+  display: block;
+  padding: 14px;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+/* 메인 버튼 */
+.confirm-btn.primary {
+  background: #212529;
+  color: #ffffff;
+}
+
+.confirm-btn.primary:hover {
+  background: #343a40;
+}
+
+/* 보조 버튼 */
+.confirm-btn.ghost {
+  background: #f1f3f5;
+  color: #495057;
+}
+
+.confirm-btn.ghost:hover {
+  background: #e9ecef;
+}
+
+/* 실패 카드 */
+.confirmation-card.fail {
+  border: 1px solid #ffe3e3;
+}
+
+/* 실패 아이콘 */
+.fail-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+/* 실패 제목 */
+.confirmation-card.fail .confirmation-title {
+  color: #e03131;
+}
+
+/* 실패 메인 버튼 */
+.confirmation-card.fail .confirm-btn.primary {
+  background: #e03131;
+}
+
+.confirmation-card.fail .confirm-btn.primary:hover {
+  background: #c92a2a;
+}
+
+/* 📱 모바일 */
+@media (max-width: 768px) {
+  .confirmation-card {
+    padding: 36px 24px;
+    border-radius: 20px;
+  }
+
+  .confirmation-title {
+    font-size: 20px;
+  }
+
+  .check-image {
+    width: 80px;
+  }
+
+  .fail-icon {
+    font-size: 40px;
+  }
+}

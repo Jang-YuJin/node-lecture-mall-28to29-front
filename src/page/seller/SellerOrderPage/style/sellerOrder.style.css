@@ -1,0 +1,228 @@
+.modal-dialog{
+    max-width: 700px;
+}
+
+/* 테이블 카드 래퍼 */
+.seller-order-table-wrapper {
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(17, 24, 39, 0.05);
+  overflow: hidden;
+}
+
+/* 테이블 */
+.seller-order-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+/* 헤더 */
+.seller-order-table thead {
+  background: var(--primary-soft);
+}
+
+.seller-order-table th {
+  padding: 14px 16px;
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+/* 바디 */
+.seller-order-table td {
+  padding: 14px 16px;
+  border-top: 1px solid #f0f0f0;
+  color: var(--text-dark);
+}
+
+/* Hover */
+.seller-order-row:hover {
+  background: var(--primary-soft);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+/* 가격 강조 */
+.seller-order-price {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* 상태 배지 정리 */
+.seller-order-table .badge {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 20px;
+}
+
+/* No Data */
+.no-order-data {
+  text-align: center;
+  padding: 32px;
+  color: #9ca3af;
+}
+
+.seller-order-cs-section-title span {
+    font-size: 12px;
+    margin-left: 10px;
+    font-weight: lighter;
+}
+
+.seller-order-cs-modal .modal-content {
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+}
+
+.seller-order-cs-modal-title {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+/* 섹션 */
+.seller-order-cs-section {
+  background: var(--primary-soft);
+  padding: 16px;
+  border-radius: 14px;
+  margin-bottom: 16px;
+}
+
+.seller-order-cs-section-title {
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--text-dark);
+}
+
+/* 정보 그리드 */
+.seller-order-cs-info-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.seller-order-cs-info-grid span {
+  font-size: 12px;
+  color: #6b7280;
+  display: block;
+}
+
+.seller-order-cs-info-grid strong {
+  font-size: 14px;
+  color: var(--text-dark);
+}
+
+/* 주문 아이템 */
+.seller-order-cs-order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 10px 14px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.seller-order-cs-order-title {
+  font-weight: 600;
+}
+
+.seller-order-cs-order-meta {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.seller-order-cs-order-right {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* 총액 */
+.seller-order-cs-total {
+  margin-top: 12px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+/* 상태 변경 */
+.seller-order-cs-status-form {
+  margin-top: 10px;
+}
+
+.seller-order-cs-button-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.seller-order-cs-primary-btn {
+  background: var(--primary);
+  border: none;
+}
+
+.seller-order-cs-primary-btn:hover {
+  background: #574fd6;
+}
+
+/* 📱 모바일 */
+@media (max-width: 768px) {
+  .seller-order-cs-modal .modal-dialog {
+    margin: 10px;
+  }
+
+  .seller-order-cs-section {
+    padding: 14px;
+  }
+
+  .seller-order-cs-order-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .seller-order-cs-button-row {
+    flex-direction: column;
+  }
+
+  .seller-order-cs-button-row button {
+    width: 100%;
+  }
+}
+
+/* 📱 모바일 대응 */
+@media (max-width: 768px) {
+  .seller-order-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .seller-order-table {
+    min-width: 900px; /* 테이블 최소 너비 확보 */
+  }
+
+  .seller-order-table th,
+  .seller-order-table td {
+    white-space: nowrap;
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+
+  /* 첫 번째 컬럼 고정 (선택사항, UX 좋음) */
+  .seller-order-table th:first-child,
+  .seller-order-table td:first-child {
+    position: sticky;
+    left: 0;
+    background: var(--primary-soft);
+    z-index: 2;
+  }
+
+  /* 헤더도 고정 */
+  .seller-order-table thead th {
+    position: sticky;
+    top: 0;
+    background: var(--primary-soft);
+    z-index: 3;
+  }
+}

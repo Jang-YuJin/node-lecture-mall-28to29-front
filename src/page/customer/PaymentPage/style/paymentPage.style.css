@@ -1,0 +1,54 @@
+.payment-title{
+    margin-top: 20px;
+}
+
+.payment-title,
+h2 {
+  font-weight: 800;
+  letter-spacing: -0.3px;
+}
+
+.form-control-order{
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 15px;
+  border: 1px solid #ffffff;
+  transition: all 0.2s ease;
+}
+
+.form-control-order:focus {
+  border-color: #343a40;
+  box-shadow: 0 0 0 3px rgba(52, 58, 64, 0.1);
+}
+
+.rccs{
+    margin:0 !important;
+}
+
+.form-area input{
+    margin-bottom: 10px;
+}
+.pay-button{
+  width: 100%;
+  border-radius: 999px;
+  padding: 14px;
+  font-weight: 800;
+  margin-top: 20px;
+}
+
+.mobile-receipt-area{
+    display:none;
+}
+
+@media screen and (max-width: 768px) {
+    .form-area{
+        margin-top: 20px;
+    }
+
+    .receipt-area{
+        display: none;
+    }
+    .mobile-receipt-area{
+        display:block;
+    }
+}

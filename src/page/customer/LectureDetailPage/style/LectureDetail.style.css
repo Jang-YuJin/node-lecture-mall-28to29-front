@@ -1,0 +1,136 @@
+.product-info{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* 가격 섹션 */
+.price-section {
+  position: relative;
+  margin: 16px 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* 할인 뱃지 */
+.discount-badge-detail {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  background: #fff4e6;
+  color: #d9480f;
+  white-space: nowrap;
+}
+
+/* 가격 줄 */
+.price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+/* 원가 */
+.original-price {
+  font-size: 15px;
+  color: #adb5bd;
+  text-decoration: line-through;
+}
+
+/* 할인된 가격 (강조) */
+.discounted-price {
+  font-size: 26px;
+  font-weight: 800;
+  color: #212529;
+}
+
+/* 할인 없을 때 */
+.normal-price {
+  font-size: 26px;
+  font-weight: 800;
+  color: #212529;
+}
+
+.product-desc {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.material-section {
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.material-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.material-btn {
+  border-radius: 999px;
+  padding: 6px 16px;
+}
+
+.warning-message {
+  color: #d9534f;
+  margin-bottom: 1rem;
+}
+
+.material-section {
+  padding: 12px 0;
+}
+
+.section-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.total-price{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.material-section.error {
+  border: 1px solid #fa5252;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.error-text {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #fa5252;
+}
+
+/* 📱 모바일 */
+@media (max-width: 768px) {
+  .product-info-area {
+    margin-top: 1rem;
+  }
+
+  .material-options {
+    gap: 0.4rem;
+  }
+
+  .discounted-price,
+  .normal-price {
+    font-size: 22px;
+  }
+
+  .original-price {
+    font-size: 14px;
+  }
+}
