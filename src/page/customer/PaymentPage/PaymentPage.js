@@ -136,7 +136,7 @@ const PaymentPage = () => {
                   <Form.Label>연락처</Form.Label>
                   <Form.Control
                     className="form-control-order"
-                    placeholder="010-xxx-xxxxx"
+                    placeholder="010-xxxx-xxxx"
                     onChange={handleFormChange}
                     required
                     name="contact"
